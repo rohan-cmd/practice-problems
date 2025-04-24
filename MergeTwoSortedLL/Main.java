@@ -1,4 +1,4 @@
-package MergeTwoSortedArray;
+package MergeTwoSortedLL;
 
 class LinkedList {
     Node head;
