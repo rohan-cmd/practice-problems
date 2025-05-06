@@ -3,29 +3,17 @@ package RotateArray;
 import java.util.*;
 public class Main {
         public static void rotate(int[] nums, int k) {
-            // ArrayDeque<Integer> adq = new ArrayDeque<Integer>();
-            // for(int i : nums){
-            //     adq.offer(i);
-            // }
-            // for(int i=0; i<k; i++){
-            //     adq.offerFirst(adq.pollLast());
-            // }
-            // int j = 0;
-            // for(int i : adq){
-            //     nums[j]=i;
-            //     j++;
-            // }
-            int x = k;
-            int[] arr = new int[nums.length];
-            for(int i=0; i<nums.length; i++){
-                if(x==nums.length){
-                    x=0;
-                }
-                arr[x] = nums[i];
-                x++;
+            ArrayDeque<Integer> adq = new ArrayDeque<Integer>();
+            for(int i : nums){
+                adq.offer(i);
             }
-            for(int i=0; i<arr.length; i++){
-                nums[i]=arr[i];
+            for(int i=0; i<k; i++){
+                adq.offerFirst(adq.pollLast());
+            }
+            int j = 0;
+            for(int i : adq){
+                nums[j]=i;
+                j++;
             }
         }
     public static void main(String[] args) {
