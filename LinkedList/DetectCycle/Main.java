@@ -1,4 +1,4 @@
-package DetectCycle;
+package LinkedList.DetectCycle;
 
 class LinkedList {
 

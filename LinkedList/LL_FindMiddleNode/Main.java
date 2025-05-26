@@ -1,4 +1,4 @@
-package LL_FindMiddleNode;
+package LinkedList.LL_FindMiddleNode;
 
 class LinkedList{
     private Node head;
@@ -24,25 +24,6 @@ class LinkedList{
         }
     }
 
-    // WRITE FIND MIDDLE NODE METHOD HERE //
-    public Node findMiddleNode(){
-        if(head==null) return null;
-            
-            int length = 0;
-            Node temp0 = head;
-            while (temp0 != null) {
-                temp0 = temp0.next;
-                length++;
-            }
-            System.out.println("Length :-> " + length);
-            Node temp1 = head;
-            for (int i=0; i<(length/2); i++)  {
-                temp1 = temp1.next;
-            }
-            return temp1;
-        }
-
-    /* 
     public Node findMiddleNode() {
         Node slow = head;
         Node fast = head;
@@ -54,8 +35,7 @@ class LinkedList{
 
         return slow;
     }
-    */
-    ////////////////////////////////////////
+
 
     public void printLL(){
         Node temp = head;
@@ -77,6 +57,7 @@ public class Main{
         LL.append(6);
         LL.append(8);
         LL.append(10);
+        LL.append(12);
 
         LL.printLL();
 

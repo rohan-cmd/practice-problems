@@ -1,4 +1,4 @@
-package KthNodeFromEnd;
+package LinkedList.KthNodeFromEnd;
 
 class LinkedList {
 
@@ -85,7 +85,6 @@ class LinkedList {
 
         Node temp1 = head;
         Node temp2 = head;
-
         for (int i=1; i<k; i++){
             if (temp2.next == null) {
                 return null;
