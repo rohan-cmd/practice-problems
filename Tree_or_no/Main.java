@@ -1,4 +1,4 @@
-package BT_OR_NOT;
+package Tree_or_no;
 class Node
 {
     int key;
